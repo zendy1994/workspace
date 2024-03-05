@@ -11,6 +11,8 @@ import { configValidationSchema } from '@/schema/config.schema';
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { ScheduleModule } from '@nestjs/schedule';
+import { GoogleModule } from './google/google.module';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
@@ -28,6 +30,7 @@ import { ScheduleModule } from '@nestjs/schedule';
     OtpModule,
     FollowModule,
     AwsModule,
+    GoogleModule,
   ],
   controllers: [AppController],
 })
