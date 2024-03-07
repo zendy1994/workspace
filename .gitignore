@@ -1,6 +1,3 @@
-# Postgres volumes persistent data
-postgresql/*
-
 # compiled output
 /dist
 /node_modules
@@ -37,11 +34,7 @@ lerna-debug.log*
 !.vscode/launch.json
 !.vscode/extensions.json
 
-# ENV
-src/config/environments/*.env
-!src/config/environments/sample.env
-
-# Elastic Beanstalk Files
-.elasticbeanstalk/*
-!.elasticbeanstalk/*.cfg.yml
-!.elasticbeanstalk/*.global.yml
+.data
+/files
+.env*
+/ormconfig.json
